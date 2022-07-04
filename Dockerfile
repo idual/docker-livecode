@@ -13,8 +13,8 @@ RUN apt-get update && \
         wget
 
 RUN mkdir -p /usr/local/livecode && cd /usr/local/livecode && \
-    wget "https://livecodestatic.com/downloads/livecode/9_0_0/LiveCodeCommunityServer-9_0_0-Linux-x86_64.zip" && \
-    unzip LiveCodeCommunityServer-9_0_0-Linux-x86_64.zip && \
+    wget "https://archive.org/download/live-code-community-server-for-linux-all-versions/Linux%2064-Bit/LiveCodeCommunityServer-9_6_3-Linux-x86_64.zip" && \
+    unzip LiveCodeCommunityServer-9_6_3-Linux-x86_64.zip && \
     chmod 755 livecode-community-server && \
     a2enmod actions && a2enmod cgi
     
